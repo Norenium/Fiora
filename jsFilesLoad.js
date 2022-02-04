@@ -1,14 +1,14 @@
 // INCLUDE FILES:
 
 window.addEventListener('load', function () {
-      includeJs("./node_modules/ethers/dist/ethers.umd.min.js");
-      includeJs("./js/document/layout.js");
-      includeJs("./js/mcjs/intract/consts.js");
-      includeJs("./js/mcjs/intract/addedFunctions.js");
-      includeJs("./js/mcjs/intract/onCard.js");
-      includeJs("./js/mcjs/intract/toContract.js");
-      includeJs("./js/mcjs/intract/toPage.js");
-      includeJs("./js/document/onPageLoad.js");
+      includeJs("/node_modules/ethers/dist/ethers.umd.min.js");
+      includeJs("/js/document/layout.js");
+      includeJs("/js/mcjs/intract/consts.js");
+      includeJs("/js/mcjs/intract/addedFunctions.js");
+      includeJs("/js/mcjs/intract/onCard.js");
+      includeJs("/js/mcjs/intract/toContract.js");
+      includeJs("/js/mcjs/intract/toPage.js");
+      includeJs("/js/document/onPageLoad.js");
       // <script src="./pakages/node_modules/ethers/dist/ethers.umd.min.js"></script>
 
 })
