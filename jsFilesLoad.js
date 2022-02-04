@@ -1,5 +1,5 @@
 // INCLUDE FILES:
-
+/*
 window.addEventListener('load', function () {
       includeJs("/node_modules/ethers/dist/ethers.umd.min.js");
       includeJs("/js/document/layout.js");
@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
       includeJs("/js/document/onPageLoad.js");
       // <script src="./pakages/node_modules/ethers/dist/ethers.umd.min.js"></script>
 
-})
+})*/
 
 
 
