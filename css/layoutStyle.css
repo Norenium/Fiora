@@ -1,0 +1,140 @@
+
+@media only screen and (min-width: 1008px) {
+  p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1007px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h1{
+    font-size: 30px;
+    font-weight: 600 ;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  span{
+    font-size: 16px !important;
+  }
+}
+
+
+
+
+/* Sticky Navigation:   */
+
+.header {
+  /* background-color: #f1f1f1; */
+  
+  padding: 30px;
+  text-align: center;
+  background-image: url(/assets/images/layout/22u2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;  
+}
+
+#navbar {
+  overflow: hidden;
+  /* background-color: liner-; */
+  background: linear-gradient(90deg, rgba(137, 19, 77, 0.8),rgb(128, 22, 156,0.8));
+
+} 
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  border-radius: 0.5rem;
+  background-color: rgba(177, 35, 104, 0.753);
+  color: rgba(228, 169, 201, 0.795);
+}
+
+#navbar a.active {
+  border-radius: 0.5rem;
+  background-color: rgba(228, 103, 172, 0.651);
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(120deg, #1b1580, rgba(108, 31, 115, 1), rgb(167, 7, 42));
+}
+
+#main{
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.acr{
+  background-image: url("/assets/images/layout/chain-web.svg") ;
+  background-repeat: repeat;
+
+
+}
+
+.content-test{
+  color: aliceblue;
+  padding: 2rem;
+}
+
+
+
+
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

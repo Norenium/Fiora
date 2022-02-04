@@ -1,0 +1,82 @@
+
+.head-text-1{
+
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.head-text-2{
+
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 1rem;
+
+}
+
+#titles{
+      padding-top: 1%;
+      justify-content: center;
+      text-align: center;
+}
+
+.title-icon{
+      /* font-size: 2rem; */
+
+}
+
+@keyframes come-in {
+      0%   {left:2000px; top:0px;}
+      100% {left:0px; top:0px; }
+}
+
+@keyframes come-in-2 {
+      0%   {left:0000px; top:2000px;}
+      100% {left:0px; top:0px; }
+}
+#title-0{
+      animation-name: come-in;
+      animation-duration: 2.8s;
+      position: relative;
+}
+
+#title-1{
+      animation-name: come-in-2;
+      animation-duration: 3.3s;
+      position: relative;
+}
+
+#title-2{
+      animation-name: come-in-2;
+      animation-duration: 3.6s;
+      position: relative;
+}
+
+#title-3{
+      animation-name: come-in-2;
+      animation-duration: 3.9s;
+      position: relative;
+}
+
+#title-btns{
+      animation-name: come-in-2;
+      animation-duration: 4.2s;
+      position: relative;
+}
+
+#onlyPhone{
+      animation-name: come-in-2;
+      animation-duration: 1s;
+      position: relative;
+}
+
+#connect-wallet-parent{
+      padding: 1.5rem;
+}
+
+#connect-wallet{
+
+}
+#wallet-ok-button{
+      display: none;
+}

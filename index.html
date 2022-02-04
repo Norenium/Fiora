@@ -1,10 +1,207 @@
-<!DOCTYPE html><html lang="en"><head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
       <meta charset="utf-8">
       <title>Fiora DeFi Platform</title>
       <base href="/">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
-    <body>
-      <h1>The Index</h1>
-    </body></html>
+      <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="css/layoutStyle.css">
+      <link rel="stylesheet" href="css/headerStyle.css">
+      <link rel="stylesheet" href="css/sectors.css">
+      <link rel="stylesheet" href="css/btn.css">
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+      <div id="loader" class="center"></div>
+
+      <div class="header" id="headerID">
+
+            <div class="main-header-bar">
+                  <div class="col-12 col-md-12">
+                        <div id="connect-wallet-parent">
+                              <div id="connect-wallet" class="row d-flex justify-content-end">
+                                    <div onclick="start()" id="connect-wallet-button" class="wallet-btn"
+                                          title="Coonect to metamask">
+                                          <img src="/assets/images/layout/metamask.png" alt="metamask logo">
+                                          Connect your wallet
+                                    </div>
+                                    <div id="wallet-ok-button" class="wallet-btn" title="Manage asset">
+                                          Balance: <span id="balanceAmount">0</span> FRA
+                                    </div>
+
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div id="titles">
+                  <div class="head-text-1" id="title-0">
+                        <h1> FIORA DeFi Platform</h1>
+                  </div>
+                  <div class="head-text-2" id="title-1">
+                        <h2>
+                              <span class="material-icons title-icon">
+                                    check_circle_outline
+                              </span> Manage your crypto assets.
+                        </h2>
+                  </div>
+                  <div class="head-text-2" id="title-2">
+                        <h2> 
+                              <span class="material-icons title-icon">
+                                    check_circle_outline
+                              </span> Stake liquidity for
+                              <a href="https://www.investopedia.com/terms/c/cloud-mining.asp">cloud mining.</a>.
+                        </h2>
+                  </div>
+                  <div class="head-text-2" id="title-3">
+                        <h2> 
+                              <span class="material-icons title-icon">
+                                    check_circle_outline
+                              </span> Join IDOs and make profit.
+                        </h2>
+                  </div>
+
+                  <div id="title-btns">
+                        <div class="nav-btns row  d-flex justify-content-center">
+                              <div class="nav-btn" id="btn-fra">Manage "FRA" tokens</div>
+                              <div class="nav-btn" id="btn-com">Join Our big Comunity</div>
+                        </div>
+                  </div>
+
+                  <div  class="head-text-2"  id="onlyPhone" style="display: none;;">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Sweep up to see more ....</p>
+                  </div>
+
+            </div>
+      </div>
+      <div class="acr">
+
+            <div id="navbar">
+
+                  <div>
+
+                        <a class="active" href="javascript:void(0)" style="  margin-left:14px;">About</a>
+                        <a href="javascript:void(0)">Projects</a>
+                        <a href="javascript:void(0)">Projects</a>
+                        <a href="javascript:void(0)">White paper</a>
+                        <a href="javascript:void(0)">Roadmap</a>
+                        <a href="javascript:void(0)"> > User Guide</a>
+                  </div>
+
+                  <div class="d-flex d-flex justify-content-end">
+                        <a class="wallet-btn float-right" title="Manage asset"
+                              style="margin:0px; margin-right:14px; padding: 10px;">
+                              <div class="">
+                                    Dashboard
+                                    <span class="material-icons position-relative bottom-0" style="font-size: 18px ;">
+                                          manage_accounts
+                                    </span>
+                              </div>
+                        </a>
+                  </div>
+            </div>
+            <div class="content-test">
+                  <div class="content-ssector col-12">
+                        <div class="sector-head  ">About Fiora</div>
+                        <div class="sector-body">
+                              <p>The navbar will stick to the top when you reach its scroll position.</p>
+                              <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
+                                    maluisset
+                                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam
+                                    omnis
+                                    evertitur
+                                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+                                    molestiae
+                                    voluptatibus.</p>
+                        </div>
+                  </div>
+                  <h3>Sticky Navigation Example</h3>
+                  <p>The navbar will stick to the top when you reach its scroll position.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                        evertitur
+                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                        voluptatibus.</p>
+            </div>
+      </div>
+      <script type="text/javascript" src="/js/jsFilesLoad.js"></script>
+</body>
+
+</html>

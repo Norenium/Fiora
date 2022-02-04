@@ -1,0 +1,12 @@
+.sector-head{
+      font-size: 6.5vw;;
+      caret-color: white;
+      font-weight: bolder;
+}
+
+.sector-body{
+      caret-color: white;
+}
+.sector-body p{
+      font-size: 2vh    ;
+}
