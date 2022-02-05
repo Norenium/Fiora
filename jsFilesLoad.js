@@ -1,5 +1,5 @@
 // INCLUDE FILES:
-/*
+console.log('js files load start.')
 window.addEventListener('load', function () {
       includeJs("/node_modules/ethers/dist/ethers.umd.min.js");
       includeJs("/js/document/layout.js");
@@ -10,8 +10,9 @@ window.addEventListener('load', function () {
       includeJs("/js/mcjs/intract/toPage.js");
       includeJs("/js/document/onPageLoad.js");
       // <script src="./pakages/node_modules/ethers/dist/ethers.umd.min.js"></script>
+      console.log('js files load end.')
 
-})*/
+})
 
 
 
