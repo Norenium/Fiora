@@ -36,7 +36,7 @@
   
   padding: 30px;
   text-align: center;
-  background-image: url(./assets/images/layout/22u2.png);
+  background-image: url(../assets/images/layout/22u2.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;  
@@ -101,7 +101,7 @@ body{
 }
 
 .acr{
-  background-image: url("./assets/images/layout/chain-web.svg") ;
+  background-image: url("../assets/images/layout/chain-web.svg") ;
   background-repeat: repeat;
 
 

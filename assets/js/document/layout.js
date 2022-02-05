@@ -20,7 +20,7 @@ function myFunction() {
 
 function setHeaderWidth() {
   console.log('setHeaderWidth Call() width:  '+ window.innerWidth )
-  if (window.innerWidth <= 640) {
+  if (window.innerWidth <= 107) {
     document.getElementById('headerID').style.padding = '3px';
     document.getElementById('onlyPhone').style.display = 'block';
     // document.getElementById('headerID').style.display = 'none';
