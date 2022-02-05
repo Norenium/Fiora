@@ -4,16 +4,7 @@
 
 /* Sticky Navigation:   */
 
-.header {
-  /* background-color: #f1f1f1; */
-  
-  padding: 3px;
-  text-align: center;
-  background-image: url(../assets/images/layout/22u2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;  
-}
+
 
 .content {
   padding: 16px;
