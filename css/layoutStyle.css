@@ -1,31 +1,4 @@
 
-@media only screen and (min-width: 1008px) {
-  p {
-    font-size: 30px;
-  }
-}
-@media only screen and (max-width: 1007px) {
-  p {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  h1{
-    font-size: 30px;
-    font-weight: 600 ;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  p {
-    font-size: 14px;
-  }
-  span{
-    font-size: 16px !important;
-  }
-}
-
 
 
 
@@ -34,41 +7,12 @@
 .header {
   /* background-color: #f1f1f1; */
   
-  padding: 30px;
+  padding: 3px;
   text-align: center;
   background-image: url(../assets/images/layout/22u2.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;  
-}
-
-#navbar {
-  overflow: hidden;
-  /* background-color: liner-; */
-  background: linear-gradient(90deg, rgba(137, 19, 77, 0.8),rgb(128, 22, 156,0.8));
-
-} 
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a:hover {
-  border-radius: 0.5rem;
-  background-color: rgba(177, 35, 104, 0.753);
-  color: rgba(228, 169, 201, 0.795);
-}
-
-#navbar a.active {
-  border-radius: 0.5rem;
-  background-color: rgba(228, 103, 172, 0.651);
-  color: white;
 }
 
 .content {
@@ -90,7 +34,9 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  margin: 0;
+  /* margin: 0px; */
+  overflow-x: hidden;
+  /* box-sizing: content-box; */
   background: linear-gradient(120deg, #1b1580, rgba(108, 31, 115, 1), rgb(167, 7, 42));
 }
 
@@ -100,16 +46,16 @@ body{
   overflow-x: hidden;
 }
 
-.acr{
+.main-container{
   background-image: url("../assets/images/layout/chain-web.svg") ;
   background-repeat: repeat;
-
-
+  /* box-sizing: content-box; */
 }
 
 .content-test{
   color: aliceblue;
-  padding: 2rem;
+  padding: 4%;
+
 }
 
 
@@ -121,6 +67,7 @@ body{
   width: 100%;
   height: 100%;
 }
+a
 #loader {
   border: 12px solid #f3f3f3;
   border-radius: 50%;

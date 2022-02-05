@@ -18,7 +18,7 @@ function onPageLoads() {
 
 
 
-
+/// LOADING SPINNER
 document.onreadystatechange = function () {
       if (document.readyState !== "complete") {
             document.querySelector(

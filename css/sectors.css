@@ -1,12 +1,18 @@
+.content-sector{
+      background-color: rgb(238, 130, 238, 0.2); 
+      padding: 4%;
+      margin-top: 10px;
+      /* margin-bottom: 20px; */
+      border-radius: 10px;
+}
+
 .sector-head{
-      font-size: 6.5vw;;
       caret-color: white;
       font-weight: bolder;
+
 }
 
 .sector-body{
       caret-color: white;
 }
-.sector-body p{
-      font-size: 2vh    ;
-}
+

@@ -12,9 +12,13 @@
       <link rel="stylesheet" href="css/layoutStyle.css">
       <link rel="stylesheet" href="css/headerStyle.css">
       <link rel="stylesheet" href="css/sectors.css">
+      <link rel="stylesheet" href="css/medai.css">
       <link rel="stylesheet" href="css/btn.css">
+      <link rel="stylesheet" href="css/nav.css">
 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -23,7 +27,7 @@
       <div id="loader-pad">
             <div id="loader" class="center"></div>
       </div>
-      
+
       <div class="header" id="headerID">
 
             <div class="main-header-bar">
@@ -72,6 +76,8 @@
                   </div>
 
                   <div id="title-btns">
+                        <br>
+                        <br>
                         <div class="nav-btns row  d-flex justify-content-center">
                               <div class="nav-btn" id="btn-fra">Manage "FRA" tokens</div>
                               <div class="nav-btn" id="btn-com">Join Our big Comunity</div>
@@ -88,37 +94,51 @@
 
             </div>
       </div>
-      <div class="acr">
 
-            <div id="navbar">
 
-                  <div>
+      <div class="main-container">
 
-                        <a class="active" href="javascript:void(0)" style="  margin-left:14px;">About</a>
-                        <a href="javascript:void(0)">Projects</a>
-                        <a href="javascript:void(0)">Projects</a>
-                        <a href="javascript:void(0)">White paper</a>
-                        <a href="javascript:void(0)">Roadmap</a>
-                        <a href="javascript:void(0)"> > User Guide</a>
-                  </div>
-
-                  <div class="d-flex d-flex justify-content-end">
-                        <a class="wallet-btn float-right" title="Manage asset"
-                              style="margin:0px; margin-right:14px; padding: 10px;">
-                              <div class="">
-                                    Dashboard
-                                    <span class="material-icons position-relative bottom-0" style="font-size: 18px ;">
-                                          manage_accounts
-                                    </span>
-                              </div>
+            <!-- Nav Bar  -->
+            <div id="sticky-nav">
+                  <div class="topnav" id="myTopnav">
+                        <a href="javascript:void(0);" class="icon" onclick="changeNav()">
+                              <i class="fa fa-bars"></i>
                         </a>
+                        <a href="#about" onclick="changeNav()" class="active">About</a>
+                        <a href="#whitepaper" onclick="changeNav()">White paper</a>
+                        <a href="#roadmap" onclick="changeNav()">Road map</a>
+                        <a href="#projects" onclick="changeNav()">Projects</a>
+                        <a href="#userguide" onclick="changeNav()">> User guide</a>
+                        <div class="d-flex d-flex justify-content-end">
+                              <a class="wallet-btn float-right" title="Manage asset"
+                                    style="margin:0px; margin-right:14px; padding: 10px;">
+                                    <div class="">
+                                          Dashboard
+                                          <span class="material-icons position-relative bottom-0"
+                                                style="font-size: 18px ;">
+                                                manage_accounts
+                                          </span>
+                                    </div>
+                              </a>
+                        </div>
                   </div>
             </div>
+
             <div class="content-test">
-                  <div class="content-ssector col-12">
-                        <div class="sector-head  ">About Fiora</div>
+                  <div id="about">
+                        <br>
+                        <br>
+                  </div>
+                  <div class="content-sector col-12" id="">
+
+                        <div class="sector-head">
+                              <h1> About Fiora</h1>
+                        </div>
+
                         <div class="sector-body">
-                              <p>The navbar will stick to the top when you reach its scroll position.</p>
+                              <h3>Where the idea meets reality.</h3>
+                              <p>The FIORA platform's mission is to provide an infrastructure for new raising web3
+                                    projects and empower them till fulfilling victory.</p>
                               <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
                                     maluisset
                                     concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam
@@ -129,6 +149,48 @@
                                     voluptatibus.</p>
                         </div>
                   </div>
+
+
+
+                  <div id="whitepaper">
+                        <br>
+                        <br>
+                  </div>
+                  <div class="content-sector col-12" id="">
+                        <div class="sector-head  ">
+                              <h1> White Paper</h1>
+                        </div>
+
+                        <div class="sector-body">
+                              <h3>Marketing white paper example.</h3>
+                              <p>If your goal with whitepapers is to promote your services and generate leads for your
+                                    agency, your message needs to be memorable. Incorporating visuals resembling your
+                                    target audience is one way to do so.
+
+                                    This content marketing white paper template depicts someone hard at work while
+                                    downing a cup of coffee. The image would resonate most with professional marketers
+                                    you're trying to reach in a B2B capacity.</p>
+
+                              <div class="inline-image">
+                                    <a href="https://www.instructionalsolutions.com/blog/how-to-write-white-paper"
+                                          target="_blank">
+                                          <img src="./assets/images/layout/How to write whitepaper.jpg"
+                                                alt="white paper image" class="card-img">
+                                    </a>
+                              </div>
+                              <p>Photos, icons, and illustrations can play an important role in how effectively your
+                                    white paper communicates information. It's almost as important as knowing how to
+                                    write a white paper that conveys information succinctly.
+
+                                    Don't just use images for decoration. Instead, use photos to illustrate important
+                                    concepts, to make information easier to understand, and to convey a mood. Marketing
+                                    white paper examples, like this one, use bright, colorful photos to engage and
+                                    excite readers.</p>
+                        </div>
+                  </div>
+
+
+
                   <h3>Sticky Navigation Example</h3>
                   <p>The navbar will stick to the top when you reach its scroll position.</p>
                   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
@@ -156,11 +218,13 @@
                         evertitur
                         eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
                         voluptatibus.</p>
-                  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
-                        concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
-                        evertitur
-                        eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
-                        voluptatibus.</p>
+                  <p id="roadmap">
+                  <h1>white test</h1>
+                  Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                  concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+                  evertitur
+                  eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+                  voluptatibus.</p>
                   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
                         concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
                         evertitur

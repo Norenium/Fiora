@@ -1,0 +1,35 @@
+/*       DESKTOP SCREEN       */
+@media only screen and (min-width: 1008px) {
+      p {
+            font-size: 30px;
+      }
+}
+
+
+/*       TABLET SCREEN       */
+@media only screen and (max-width: 1007px) {
+      p {
+            font-size: 20px;
+      }
+}
+
+
+
+
+
+/*       PHONE SCREEN       */
+@media only screen and (max-width: 640px) {
+      h1{
+            font-size: 30px;
+            font-weight: 600 ;
+      }
+      h2 {
+            font-size: 22px;
+      }
+      p {
+            font-size: 16px;
+      }
+span{
+font-size: 16px !important;
+}
+}
