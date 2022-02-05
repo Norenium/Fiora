@@ -1,0 +1,55 @@
+
+.bold-title{
+      font-weight: 700;
+}
+.counter-title{
+      background-color: hsl(275, 100%, 25% , 0.4);
+      border-radius: 30%;
+}
+#counters{
+      background-image: url(../assets/images/layout/num-back.jpg);
+      background-repeat: no-repeat;
+
+}
+#counters-phone{
+      background-image: url(../assets/images/layout/phone-2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.content {
+      display: flex;
+      /* justify-content: space-around;    */
+      align-items: center;
+      background: rgb(236, 118, 191,0.35);
+           height: 50vh;
+}
+
+.value {
+      font-size: 100px;
+      display: block;
+      font-weight: bold;
+      color: #fff;
+}
+
+.hl{
+      border-bottom: indigo 1px solid;
+      width: 100%;
+}
+
+
+
+.glow {
+      /* font-size: 80px; */
+      color: #fff;
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+@-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }

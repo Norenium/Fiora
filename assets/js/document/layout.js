@@ -1,7 +1,13 @@
 
 // Sticky Navigation:
 
-window.onscroll = function () { setNav() };
+window.onscroll = function () { 
+  setNav();
+  
+  doAnimate();
+
+  reArrengeCounters();
+};
 
 var navbar = document.getElementById("sticky-nav");
 var sticky = navbar.offsetTop;
