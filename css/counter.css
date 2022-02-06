@@ -4,7 +4,7 @@
 }
 .counter-title{
       background-color: hsl(275, 100%, 25% , 0.4);
-      border-radius: 30%;
+      border-radius: 20%;
 }
 #counters-desktop{
       background-image: url(../assets/images/layout/num-back.jpg);
@@ -22,11 +22,16 @@
       /* justify-content: space-around;    */
       align-items: center;
       background: rgb(236, 118, 191,0.35);
-           height: 50vh;
+      height: 20vw;
+
+}
+.content h1 {
+      font-size: 2vw !important;
+
 }
 
 .value {
-      font-size: 100px;
+      font-size: 6vw;
       display: block;
       font-weight: bold;
       color: #fff;

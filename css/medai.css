@@ -73,4 +73,10 @@
       #counters-phone{
             display: block;
       }
+      .counter-title{
+            margin: auto;
+            padding: 6%;
+            border-radius: 30% !important;
+
+      }
 }
