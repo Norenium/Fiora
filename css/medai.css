@@ -5,15 +5,20 @@
       }
 
       .header {
-            /* background-color: #f1f1f1; */
-            
-            padding: 3px;
-            text-align: center;
             background-image: url(../assets/images/layout/22u2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 100vh;  
-          }
+      }
+      #roadmap{
+            width: 50%;
+      }
+
+      #counters-desktop{
+            display: block;
+      }
+      
+      #counters-phone{
+            display: none;
+      }
+
 }
 
 
@@ -23,15 +28,17 @@
             font-size: 20px;
       }
       .header {
-            /* background-color: #f1f1f1; */
-            
-            padding: 3px;
-            text-align: center;
             background-image: url(../assets/images/layout/22u2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 100vh;  
-          }
+      }
+
+
+      #counters-desktop{
+            display: block;
+      }
+      
+      #counters-phone{
+            display: none;
+      }
 }
 
 
@@ -40,6 +47,7 @@
 
 /*       PHONE SCREEN       */
 @media only screen and (max-width: 640px) {
+
       h1{
             font-size: 30px;
             font-weight: 600 ;
@@ -51,16 +59,17 @@
             font-size: 16px;
       }
       .header {
-            /* background-color: #f1f1f1; */
-            
-            padding: 3px;
-            text-align: center;
             background-image: url(../assets/images/layout/phone-head.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 100vh;  
-          }
-span{
-font-size: 16px !important;
-}
+      }
+      span{
+      font-size: 16px !important;
+      }
+
+      #counters-desktop{
+            display: none;
+      }
+      
+      #counters-phone{
+            display: block;
+      }
 }

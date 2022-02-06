@@ -1,13 +1,7 @@
 
 // Sticky Navigation:
 
-window.onscroll = function () { 
-  setNav();
-  
-  doAnimate();
 
-  reArrengeCounters();
-};
 
 var navbar = document.getElementById("sticky-nav");
 var sticky = navbar.offsetTop;
@@ -49,3 +43,15 @@ function setHeaderWidth() {
 
   }
 }
+
+function include(filename)
+{
+  //  var head = document.getElementsByTagName('body');
+   var head = document.getElementsByTagName('head')[0];
+
+   var script = document.createElement('script');
+   script.src = filename;
+   script.type = 'text/javascript';
+
+   head.appendChild(script)
+}   

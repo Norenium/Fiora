@@ -6,6 +6,7 @@ onPageLoads()
 function onPageLoads() {
 
 
+      
 
 
       setTimeout(() => {
@@ -13,8 +14,14 @@ function onPageLoads() {
             setHeaderWidth();
 
       }, 2000)
-}
 
+
+      var distance = document.getElementById("counter-0").offsetTop;
+      var divHeight = document.getElementById("counter-0").offsetHeight;
+      var screenWidth = window.innerWidth;
+      trrigerLevel = (distance-divHeight)-(0.1*screenWidth)
+}
+var trrigerLevel;
 
 
 

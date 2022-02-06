@@ -6,13 +6,14 @@
       background-color: hsl(275, 100%, 25% , 0.4);
       border-radius: 30%;
 }
-#counters{
+#counters-desktop{
       background-image: url(../assets/images/layout/num-back.jpg);
       background-repeat: no-repeat;
+      background-size: cover;
 
 }
 #counters-phone{
-      background-image: url(../assets/images/layout/phone-2.png);
+      background-image: url(../assets/images/layout/phone-2.jpg);
       background-repeat: no-repeat;
       background-size: cover;
 }
