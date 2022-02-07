@@ -20,8 +20,8 @@ var menuItemIds = ['about-item', 'whitepaper-item', 'roadmap-item', 'projects-it
 // nav 
 
 function changeNav(id) {
-  console.log('chng nv id: '+id)
 
+  console.log('win width: '+window.innerWidth)
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";

@@ -1,0 +1,60 @@
+body{
+      background-image: url(../../assets/images/com/back.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.main-container{
+      height: 100vh;
+      overflow: auto;
+      overflow-x: hidden;
+}
+
+.sub-container{
+      background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(255, 255, 255, 0.4));
+
+}
+
+.head-title{
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 6vw;
+      font-weight: bold;
+}
+
+.body-title{
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.5rem;
+}
+
+.tool-pad{
+      background-color: white;
+      border: 3px solid rgb(9, 118, 243);
+      border-radius: 2rem;
+      /* margin-left: 20%; */
+      height: 30vh;
+
+}
+
+.too-logo{
+      position: relative;
+      z-index: 99;
+      /* margin-left: -30px; */
+      width: 300px;
+}
+.tool-sector{
+      /* border: red 2px solid; */
+}
+.sub-sector{
+      /* border: rgb(179, 255, 0) 2px solid; */
+      /* height: 40vh; */
+}
+
+.vertical-center {
+      /* margin: 0; */
+      /* position: absolute; */
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }

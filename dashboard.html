@@ -21,12 +21,12 @@
       <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-     
-     
-     		<!-- amCharts javascript sources -->
-		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
-		
+
+
+      <!-- amCharts javascript sources -->
+      <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+      <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+
       <!-- amCharts javascript code -->
       <script type="text/javascript">
             AmCharts.makeChart("chartdiv",
@@ -124,96 +124,104 @@
             <div class="navbar-balance">Balance: 10250 FRA</div>
       </div>
 
-      <div class="contents row col-12">
+      <div class="main-container">
+            <div class="contents row col-12">
 
-            <div class="part-pad col-md-6 col-sm-12 ">
-                  <div class="part">
-                        <div class="part-header"> Projects I invested in:</div>
-                        <div class="part-body">
-                              <div class="project-invested">
-                                    <div class="project-name">Awesome game</div>
-                                    <div class="project-detail"> 245 FSD token</div>
-                                    <div class="project-detail"> 38% Price-Growth</div>
-                                    <div class="p-btns">
-                                          <a class="p-btn">Go to project page</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-                                                class="p-btn">Track Project</a>
+                  <div class="part-pad col-md-6 col-sm-12 ">
+                        <div class="part">
+                              <div class="part-header"> Projects I invested in:</div>
+                              <div class="part-body">
+                                    <div class="project-invested">
+                                          <div class="project-name">Awesome game</div>
+                                          <div class="project-detail"> 245 FSD token</div>
+                                          <div class="project-detail"> 38% Price-Growth</div>
+                                          <div class="p-btns">
+                                                <a class="p-btn">Go to project page</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a class="p-btn">Track Project</a>
+                                          </div>
+                                    </div>
+                                    <div class="project-invested">
+                                          <div class="project-name">Cloud Mining</div>
+                                          <div class="project-detail"> 2.12 BNB earned</div>
+                                          <div class="project-detail"> 7% Portfolio-Growth</div>
+                                          <div class="p-btns">
+
+                                                <a class="p-btn">Go to project page</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <a class="p-btn">Track Project</a>
+
+                                          </div>
                                     </div>
                               </div>
-                              <div class="project-invested">
-                                    <div class="project-name">Cloud Mining</div>
-                                    <div class="project-detail"> 0.4587 ETH earned</div>
-                                    <div class="project-detail"> 7% Portfolio-Growth</div>
-                                    <div class="p-btns">
+                        </div>
+                  </div>
 
-                                          <a class="p-btn">Go to project page</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-                                                class="p-btn">Track Project</a>
+                  <div class="part-pad col-6">
+
+                        <div class="part   ">
+                              <div class="part-header"> Profits I have earned</div>
+                              <div class="part-body">
+                                    <div class="project-invested">
+                                          <div class="project-name d-flex justify-content-between">Awesome game: <span
+                                                      class="bal"> <img src="./assets/images/dashboard/FSD.png"
+                                                            alt="Fiora Sword Dorne" title="Fiora Sword Dorne"
+                                                            width="40"> 29
+                                                      FSD ≈ 65.11 USD</span></div>
+
+                                    </div>
+                                    <div class="project-invested">
+                                          <div class="project-name  d-flex justify-content-between">Cloud Mining: <span
+                                                      class="bal"> <img src="./assets/images/dashboard/bnb.png"
+                                                            alt="Binance" title="Binence" width="40"> 0.12 BNB ≈ 50.82
+                                                      USD </span></div>
 
                                     </div>
                               </div>
                         </div>
                   </div>
-            </div>
 
-            <div class="part-pad col-6">
+                  <div class="part-pad col-12">
 
-                  <div class="part   ">
-                        <div class="part-header"> Profits I earned</div>
-                        <div class="part-body">
-                              <div class="project-invested">
-                                    <div class="project-name d-flex justify-content-between">Awesome game:  <span class="bal">  29 <img src="./assets/images/dashboard/FSD.png" alt="Fiora Sword Dorne" title="Fiora Sword Dorne" width="50"> FSD </span></div>
-    
-                              </div>
-                              <div class="project-invested">
-                                    <div class="project-name  d-flex justify-content-between">Cloud Mining:   <span class="bal">  0.024 <img src="./assets/images/dashboard/eth.png" alt="Fiora Sword Dorne" title="Fiora Sword Dorne" width="50"> ETH </span></div>
- 
-                              </div>
-                        </div>
-                  </div>
-            </div>
+                        <div class="part   ">
+                              <div class="part-header"> My protfolio worth:</div>
+                              <div class="part-body">
+                                    <div class="project-name">Here is the results:</div>
 
-            <div class="part-pad col-12">
+                                    <div class="project-invested">
+                                          <div id="chartdiv"
+                                                style="width: 100%; height: 400px; background-color: #FFFFFF;">
+                                          </div>
 
-                  <div class="part   ">
-                        <div class="part-header"> My protfolio worth:</div>
-                        <div class="part-body">
-                              <div class="project-name">Here is the results:</div>
-
-                              <div class="project-invested">
-                                    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;">
                                     </div>
 
                               </div>
+                        </div>
+                  </div>
 
+
+                  <div class="part-pad col-md-6 col-sm-12 ">
+                        <div class="part">
+                              <div class="part-header"> My Game Tokens:</div>
+                              <div class="part-body"> Something about game tokens </div>
+                        </div>
+                  </div>
+
+
+                  <div class="part-pad col-md-6 col-sm-12 ">
+                        <div class="part   ">
+                              <div class="part-header"> My Game Tokens:</div>
+                              <div class="part-body">Something about game tokens </div>
+                        </div>
+                  </div>
+
+                  <div class="part-pad  col-md-6 col-sm-12 ">
+
+                        <div class="part   ">
+                              <div class="part-header"> My investment ratio</div>
+                              <div class="part-body">Something about investment ration</div>
                         </div>
                   </div>
             </div>
-
-
-            <div class="part-pad col-md-6 col-sm-12 ">
-                  <div class="part   ">
-                        <div class="part-header"> My Game Tokens:</div>
-                        <div class="part-body">Something about game tokens/div>
-                  </div>
-                  </div>
-            </div>
-
-
-            <div class="part-pad col-md-6 col-sm-12 ">
-                  <div class="part   ">
-                        <div class="part-header"> My Game Tokens:</div>
-                        <div class="part-body">Something about game tokens/div>
-                  </div>
-                  </div>
-            </div>
-
-            <div class="part-pad  col-md-6 col-sm-12 ">
-
-                  <div class="part   ">
-                        <div class="part-header"> My investment ratio</div>
-                        <div class="part-body">Something about investment ration</div>
-                  </div>
-            </div>
-      </div>
+      </div>      
 
 
 

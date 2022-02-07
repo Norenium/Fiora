@@ -1,5 +1,5 @@
 body{
-      background-image: url(../../assets/images/dashboard/back.svg);
+      background-image: url(../../assets/images/dashboard/back2.svg);
       background-size: cover;
       background-repeat: no-repeat;
 }
@@ -43,6 +43,11 @@ body{
 .contents{
       box-sizing: border-box;
 
+}
+.main-container{
+      height: 80vh;
+      overflow: auto;
+      overflow-x: hidden;
 }
 
 .part-header{
