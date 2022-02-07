@@ -20,6 +20,10 @@ function onPageLoads() {
       var divHeight = document.getElementById("counter-0").offsetHeight;
       var screenWidth = window.innerWidth;
       trrigerLevel = (distance-divHeight)-(0.1*screenWidth)
+
+      if(screenWidth < 1008){
+            isPhone = true;
+      }
 }
 var trrigerLevel;
 

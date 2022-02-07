@@ -16,16 +16,29 @@ function setNav() {
 
 
 
-
+var menuItemIds = ['about-item', 'whitepaper-item', 'roadmap-item', 'projects-item', 'userguide-item']
 // nav 
 
-function changeNav() {
+function changeNav(id) {
+  console.log('chng nv id: '+id)
+
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
   }
+
+
+  menuItemIds.forEach(eid => {
+  document.getElementById(eid).classList.remove("active");
+    
+  });
+
+  var act = document.getElementById(id);
+  act.className += "active";
+
+
 }
 //
 

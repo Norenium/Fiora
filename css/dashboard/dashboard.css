@@ -1,0 +1,148 @@
+body{
+      background-image: url(../../assets/images/dashboard/back.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.navbar {
+      overflow: hidden;
+      background: linear-gradient(90deg, rgba(36, 96, 226, 0.8),rgb(128, 22, 156,0.8));
+      /* background: linear-gradient(90deg, rgba(137, 19, 77, 0.8),rgb(128, 22, 156,0.8)); */
+}
+
+
+.navbar-title{
+    color: rgb(68, 13, 90);  
+    font-size: 3vw;
+    font-weight: bold;
+    margin-left: 5%;
+    text-shadow: violet 5px 5px 20px;
+}
+
+.navbar-balance{
+      color: white;  
+      margin-right: 5%;
+}
+
+
+.part{
+      
+      border: rgba(185, 147, 185, 0.877) 4px solid;
+      border-radius: 2vw;
+      padding: 5%;
+}
+
+
+.part-pad{
+      box-sizing: border-box;
+      padding: 2vw;
+      padding-left: 4vw;
+}
+
+
+.contents{
+      box-sizing: border-box;
+
+}
+
+.part-header{
+      color: white;
+      font-weight: bold;
+      font-size: 2vw;
+}
+
+.part-body{
+      color: white;
+      font-size: 1.6vw;
+}
+
+.project-detail{
+      font-size: 1.4vw;
+      margin-left: 2vw;
+
+}
+
+.project-invested{
+      background-color: rgba(64, 224, 208, 0.15);
+      margin-bottom: 1vw;
+      padding: 1vw;
+      border-radius: 0.5vw;
+      margin-top: 1vw;
+      margin-left: 1vw;
+
+}
+
+.p-btns{
+      background-color: rgba(39, 241, 221, 0.0.15);
+      border: rgba(39, 241, 221, 0.5);
+      margin: 1vw;
+      padding: 1vw;
+      font-size: 1vw;
+      text-align: end   ;
+}
+.p-btns a {
+      color: turquoise;
+      text-decoration: underline;
+      cursor: pointer;
+}
+
+
+.bal{
+      color: white;
+      font-size: 1.2vw;  
+      text-align: end   ;
+}
+
+.project-name{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-btn{
+      padding: 6px 10px;
+      margin: 2px;
+      border: 2px solid rgb(238, 162, 175);
+      border-radius: 0.5rem;
+      width: auto;
+      color: rgba(255, 255, 255, 0.582);
+      background-color: rgba(238, 145, 238, 0.4);
+      /* box-shadow:
+            inset 0 0 8px #fff,
+            inset 20px 0 40px #f0f,
+            inset -20px 0 40px #0ff,
+            inset 20px 0 150px #f0f,
+            inset -20px 0 150px #0ff,
+            0 0 10px #fff,
+            -10px 0 40px #f0f,
+            10px 0 40px #0ff; */
+}
+.navbar-btn:hover{
+      padding: 1rem;
+      margin: 18px;
+      border: 2px solid rgb(241, 96, 120);
+      border-radius: 0.5rem;
+      width: auto;
+      color: white;
+      background-color: rgba(238, 145, 238, 0.4);
+      /* box-shadow:
+            inset 0 0 8px #fff,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 20px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff; */
+}

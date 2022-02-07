@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <meta charset="utf-8">
+      <title>Fiora DeFi Platform</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+      <!-- <link rel="stylesheet" href="css/layoutStyle.css"> -->
+      <!-- <link rel="stylesheet" href="css/headerStyle.css"> -->
+      <link rel="stylesheet" href="css/sectors.css">
+      <!-- <link rel="stylesheet" href="css/counter.css"> -->
+      <link rel="stylesheet" href="css/medai.css">
+      <link rel="stylesheet" href="css/btn.css">
+      <link rel="stylesheet" href="css/dashboard/dashboard.css">
+      <!-- <link rel="stylesheet" href="css/nav.css"> -->
+
+      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+     
+     
+     		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		
+      <!-- amCharts javascript code -->
+      <script type="text/javascript">
+            AmCharts.makeChart("chartdiv",
+                  {
+                        "type": "serial",
+                        "categoryField": "category",
+                        "startDuration": 1,
+                        "categoryAxis": {
+                              "gridPosition": "start"
+                        },
+                        "trendLines": [],
+                        "graphs": [
+                              {
+                                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                                    "bullet": "round",
+                                    "id": "AmGraph-1",
+                                    "title": "Awesome game",
+                                    "valueField": "column-1"
+                              },
+                              {
+                                    "balloonText": "[[title]] of [[category]]:[[value]]",
+                                    "bullet": "square",
+                                    "id": "AmGraph-2",
+                                    "title": "Cloud mining",
+                                    "valueField": "column-2"
+                              }
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                              {
+                                    "id": "ValueAxis-1",
+                                    "title": "Tokens price"
+                              }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                              "enabled": true,
+                              "useGraphSettings": true
+                        },
+                        "titles": [
+                              {
+                                    "id": "Title-1",
+                                    "size": 15,
+                                    "text": "Your Fiora Portfolio"
+                              }
+                        ],
+                        "dataProvider": [
+                              {
+                                    "category": "period 1",
+                                    "column-1": 8,
+                                    "column-2": 5
+                              },
+                              {
+                                    "category": "period 2",
+                                    "column-1": 6,
+                                    "column-2": 7
+                              },
+                              {
+                                    "category": "period 3",
+                                    "column-1": 2,
+                                    "column-2": 3
+                              },
+                              {
+                                    "category": "period 4",
+                                    "column-1": 1,
+                                    "column-2": 3
+                              },
+                              {
+                                    "category": "period 5",
+                                    "column-1": 2,
+                                    "column-2": 1
+                              },
+                              {
+                                    "category": "period 6",
+                                    "column-1": 3,
+                                    "column-2": 2
+                              },
+                              {
+                                    "category": "period 7",
+                                    "column-1": 6,
+                                    "column-2": 8
+                              }
+                        ]
+                  }
+            );
+      </script>
+</head>
+
+<body>
+      <br>
+      <br>
+      <div class="navbar">
+            <div class="navbar-title">Dashboard</div>
+            <div class="navbar-balance">Balance: 10250 FRA</div>
+      </div>
+
+      <div class="contents row col-12">
+
+            <div class="part-pad col-md-6 col-sm-12 ">
+                  <div class="part">
+                        <div class="part-header"> Projects I invested in:</div>
+                        <div class="part-body">
+                              <div class="project-invested">
+                                    <div class="project-name">Awesome game</div>
+                                    <div class="project-detail"> 245 FSD token</div>
+                                    <div class="project-detail"> 38% Price-Growth</div>
+                                    <div class="p-btns">
+                                          <a class="p-btn">Go to project page</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                                                class="p-btn">Track Project</a>
+                                    </div>
+                              </div>
+                              <div class="project-invested">
+                                    <div class="project-name">Cloud Mining</div>
+                                    <div class="project-detail"> 0.4587 ETH earned</div>
+                                    <div class="project-detail"> 7% Portfolio-Growth</div>
+                                    <div class="p-btns">
+
+                                          <a class="p-btn">Go to project page</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                                                class="p-btn">Track Project</a>
+
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="part-pad col-6">
+
+                  <div class="part   ">
+                        <div class="part-header"> Profits I earned</div>
+                        <div class="part-body">
+                              <div class="project-invested">
+                                    <div class="project-name d-flex justify-content-between">Awesome game:  <span class="bal">  29 <img src="./assets/images/dashboard/FSD.png" alt="Fiora Sword Dorne" title="Fiora Sword Dorne" width="50"> FSD </span></div>
+    
+                              </div>
+                              <div class="project-invested">
+                                    <div class="project-name  d-flex justify-content-between">Cloud Mining:   <span class="bal">  0.024 <img src="./assets/images/dashboard/eth.png" alt="Fiora Sword Dorne" title="Fiora Sword Dorne" width="50"> ETH </span></div>
+ 
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="part-pad col-12">
+
+                  <div class="part   ">
+                        <div class="part-header"> My protfolio worth:</div>
+                        <div class="part-body">
+                              <div class="project-name">Here is the results:</div>
+
+                              <div class="project-invested">
+                                    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;">
+                                    </div>
+
+                              </div>
+
+                        </div>
+                  </div>
+            </div>
+
+
+            <div class="part-pad col-md-6 col-sm-12 ">
+                  <div class="part   ">
+                        <div class="part-header"> My Game Tokens:</div>
+                        <div class="part-body">Something about game tokens/div>
+                  </div>
+                  </div>
+            </div>
+
+
+            <div class="part-pad col-md-6 col-sm-12 ">
+                  <div class="part   ">
+                        <div class="part-header"> My Game Tokens:</div>
+                        <div class="part-body">Something about game tokens/div>
+                  </div>
+                  </div>
+            </div>
+
+            <div class="part-pad  col-md-6 col-sm-12 ">
+
+                  <div class="part   ">
+                        <div class="part-header"> My investment ratio</div>
+                        <div class="part-body">Something about investment ration</div>
+                  </div>
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <script type="text/javascript" src="./assets/js/Intract/consts.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/addedFunctions.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/onCard.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/toContract.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/toPage.js"></script>
+      <script type="text/javascript" src="./assets/node_modules/ethers/dist/ethers.umd.min.js"></script>
+      <script type="text/javascript" src="./assets/js/document/layout.js"></script>
+      <script type="text/javascript" src="./assets/js/document/onPageLoad.js"></script>
+      <script type="text/javascript" src="./assets/js/document/counter.js"></script>
+      <script type="text/javascript" src="./assets/js/document/onScroll.js"></script>
+
+
+
+
+
+</body>
+
+</html>
