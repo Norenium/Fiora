@@ -44,11 +44,7 @@ body{
       box-sizing: border-box;
 
 }
-.main-container{
-      height: 80vh;
-      overflow: auto;
-      overflow-x: hidden;
-}
+
 
 .part-header{
       color: white;
