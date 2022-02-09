@@ -1,0 +1,129 @@
+.navbar-balance{
+      color: white;  
+      margin-right: 5%;
+}
+
+.navbar-item{
+      margin-right: 5%;
+      text-decoration: underline;
+      color: white ;  
+      
+
+}
+
+body{
+      background-image: url(../../assets/images/ido/bkgr.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white ;  
+
+}
+
+.navbar {
+      overflow: hidden;
+      background: linear-gradient(90deg, rgba(37, 30, 30, 0.8),#ff6b9fb0);
+      /* background: linear-gradient(90deg, rgba(137, 19, 77, 0.8),rgb(128, 22, 156,0.8)); */
+}
+
+.navbar-title{
+      margin-left: 5%;
+      font-size: 2vw;
+      font-weight: bold;
+      color: white ;  
+      text-decoration: none;
+
+}
+
+.main-container{
+      height: 82vh;
+      overflow: auto;
+      overflow-x: hidden;
+}
+.head-pad{
+      height: 18vh;
+
+}
+
+.s-title-head{
+      font-size: 14vw;
+      font-family: Impact, fantasy	;
+      margin-left: 10%;
+}
+
+.plan-pad{
+      padding: 2%;
+}
+
+.plan{
+      padding: 6%;
+      box-sizing: unset;
+      border-radius: 2rem;
+      border: #ff6b9fb0 2px solid;
+}
+.plan-logo{
+      max-width: 100%;
+      max-width: 100%;
+      margin: 0;
+      position: relative;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+.plan-logo-pad{
+      width: 100%;
+      height: 8vw;
+
+}
+.plan-description li{
+      margin-left: 5%;
+}
+
+.plan-title{
+      font-size: 1.7vw;
+      font-weight: bold;
+}
+
+.ido-info{
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+
+}
+
+.text-description{
+      margin-left: 10%;
+}
+.text-description p{
+      font-size: 18px;
+}
+
+.copy{
+      cursor: pointer;
+}
+
+#line{
+      margin-bottom: 1.5rem;
+      border-bottom: orchid 4px solid;
+}
+.note{
+      margin-right: 10%;
+      margin-left: 10%;
+      color: rgb(231, 154, 154);
+}
+
+.deposit-inp{
+      border-radius: 30px;
+      border: orchid 2px solid;
+}
+.deposit-btn{
+      border-radius: 30px;
+      border: orchid 2px solid;
+      color: white;
+      background-color: rgb(158, 0, 158);
+}
+
+.withdraw-btn{
+      border-radius: 30px;
+      border: white 2px solid;
+      color:  orchid ;
+      background-color: white;
+}

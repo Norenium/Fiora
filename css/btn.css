@@ -1,4 +1,10 @@
 
+.nav-btn a{
+text-decoration: none;
+}
+.nav-btn a:hover{
+text-decoration: none;
+}
 .nav-btn{
 	padding: 1rem;
       margin: 18px;
