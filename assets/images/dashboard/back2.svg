@@ -879,8 +879,10 @@
         </linearGradient>
         <radialGradient id="SvgjsRadialGradient1044">
             <stop stop-color="#ffffff" offset="0.1"></stop>
-            <stop stop-color="rgba(185, 43, 255, 1)" offset="0.2"></stop>
-            <stop stop-color="rgba(185, 43, 255, 0)" offset="1"></stop>
+            <stop stop-color="rgba(185, 43, 255, 0.2)" offset="0.2"></stop>
+            <stop stop-color="rgba(185, 43, 255, 00.2)" offset="1"></stop>
         </radialGradient>
     </defs>
 </svg>
+
+
