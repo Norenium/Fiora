@@ -8,7 +8,7 @@ text-decoration: none;
 .nav-btn{
 	padding: 1rem;
       margin: 18px;
-      border: 2px solid rgb(238, 162, 175);
+      border: 4px solid rgb(238, 162, 175);
       border-radius: 0.5rem;
       width: auto;
       color: white;
@@ -25,9 +25,10 @@ text-decoration: none;
 }
 
 .nav-btn:hover{
-	padding: 0.5rem;
+	padding: 1rem;
       margin: 18px;
-      border: 4px solid rgb(241, 135, 153);
+      border: 4px solid #FF72D9;
+      /* border: 4px solid rgb(241, 135, 153); */
       border-radius: 0.5rem;
       width: auto;
       color: rgb(255, 253, 253);
@@ -35,7 +36,6 @@ text-decoration: none;
 	cursor: pointer;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	font-weight: 700;
 }
 
 .wallet-btn{

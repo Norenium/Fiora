@@ -1,3 +1,5 @@
+<!--#region head  -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,8 +24,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+<!--#endregion -->
+
+
 
 <body>
+
+      <!--#region page-header  -->
+
+
 
       <div id="loader-pad">
             <div id="loader" class="center"></div>
@@ -40,7 +49,8 @@
                                           <img src="./assets/images/layout/metamask.png" alt="metamask logo">
                                           Connect your wallet
                                     </div>
-                                    <div id="wallet-ok-button" class="wallet-btn" title="Manage asset">
+                                    <div id="wallet-ok-button" class="wallet-btn" title="Manage asset" 
+                                    onclick="location.href = './dashboard';" >
                                           Balance: <span id="balanceAmount">0</span> FRA
                                     </div>
 
@@ -80,8 +90,8 @@
                         <br>
                         <br>
                         <div class="nav-btns row  d-flex justify-content-center">
-                              <div class="nav-btn" id="btn-fra">Manage "FRA" tokens</div>
-                              <div class="nav-btn" id="btn-com">Join Our big Comunity</div>
+                              <div class="nav-btn" id="btn-fra"  onclick="location.href = './ido';">Join Fiora IDOs</div>
+                              <div class="nav-btn" id="btn-com"  onclick="location.href = './community';" >Join Our big Comunity</div>
                         </div>
                   </div>
 
@@ -96,10 +106,13 @@
             </div>
       </div>
 
+      <!--#rendegion page-header  -->
+
+
 
       <div class="main-container">
 
-            <!-- Nav Bar  -->
+            <!--#region main-navbar  -->
             <div id="sticky-nav">
                   <div class="topnav" id="myTopnav">
                         <a href="javascript:void(0);" class="icon" onclick="changeNav()">
@@ -125,6 +138,10 @@
                         </div>
                   </div>
             </div>
+
+            <!--#endregion main-navbar  -->
+
+            <!--#region about  -->
 
             <div class="content-test">
                   <div id="about">
@@ -227,6 +244,11 @@
                                     voluptatibus.</p>
                         </div>
                   </div>
+
+                  <!--#endregion about  -->
+
+
+
 
 
                   <!-- White Paper -->
@@ -369,6 +391,7 @@
 
 
 
+      <!--#region scripts  -->
 
       <script type="text/javascript" src="./assets/js/Intract/consts.js"></script>
       <script type="text/javascript" src="./assets/js/Intract/addedFunctions.js"></script>
@@ -381,6 +404,7 @@
       <script type="text/javascript" src="./assets/js/document/counter.js"></script>
       <script type="text/javascript" src="./assets/js/document/onScroll.js"></script>
 
+      <!--#endregion scripts  -->
 
 
 </body>
