@@ -49,7 +49,7 @@ async function StartContract() {
                         }*/
                         
                               if (step2) {
-                                    tryGetBalance();
+                                    tryGetBalance();  
                               }
                         
                         return Promise.resolve(true);

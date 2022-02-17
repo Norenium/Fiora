@@ -1,3 +1,5 @@
+const contractAddress = "0x73Af083b4D896E073f68887170dd74200B7e6535";
+
 //#region CLASSes
 
 class NFT {
@@ -70,7 +72,6 @@ class DoneSell {
 }
 //#endregion
 
-const contractAddress = "0x783fd7e04D2f755436030693c7239FBA0aEdaF6A";
 
 
 //#region  ABI
@@ -111,17 +112,25 @@ const ABI =
 	{
 		"inputs": [
 			{
-				"internalType": "address",
-				"name": "seller",
-				"type": "address"
-			},
-			{
 				"internalType": "uint256",
-				"name": "price",
+				"name": "command",
 				"type": "uint256"
 			}
 		],
-		"name": "_buyAppleRequest",
+		"name": "CharlieCall",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "Init",
 		"outputs": [
 			{
 				"internalType": "bool",
@@ -136,68 +145,16 @@ const ABI =
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "tokenId",
+				"name": "command",
 				"type": "uint256"
-			}
-		],
-		"name": "_buyNFTRequest",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "_collectIrrigations",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "pure",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "_mineApple",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "_msgSender",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "to",
-				"type": "address"
 			},
 			{
-				"internalType": "string",
-				"name": "uri",
-				"type": "string"
+				"internalType": "uint256[]",
+				"name": "_data",
+				"type": "uint256[]"
 			}
 		],
-		"name": "_safeMintNFT",
+		"name": "alphaCall",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -206,94 +163,6 @@ const ABI =
 			}
 		],
 		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "buyer",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "sellPrice",
-				"type": "uint256"
-			}
-		],
-		"name": "_sellAppleAcception",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "_uriOf",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "account",
-				"type": "address"
-			}
-		],
-		"name": "appleBalanceOf",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "appleName",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "appleSymbol",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -319,13 +188,19 @@ const ABI =
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "tokenId",
+				"name": "command",
 				"type": "uint256"
 			}
 		],
-		"name": "cancelNFTSell",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"name": "bravoCall",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -343,131 +218,20 @@ const ABI =
 	},
 	{
 		"inputs": [],
-		"name": "getAllAuctions",
+		"name": "getLatestValue",
 		"outputs": [
-			{
-				"components": [
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "basePrice",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "auctionMaturity",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "highestBid",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "currentOwner",
-						"type": "address"
-					}
-				],
-				"internalType": "struct MorySwapContract.Auction[]",
-				"name": "",
-				"type": "tuple[]"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "getAllNFTs",
-		"outputs": [
-			{
-				"internalType": "string[]",
-				"name": "",
-				"type": "string[]"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "getAllSells",
-		"outputs": [
-			{
-				"components": [
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					}
-				],
-				"internalType": "struct MorySwapContract.SellTicket[]",
-				"name": "",
-				"type": "tuple[]"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "tokenId",
+				"name": "",
 				"type": "uint256"
 			}
 		],
-		"name": "getAuctionbyId",
-		"outputs": [
-			{
-				"components": [
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "basePrice",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "auctionMaturity",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "highestBid",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "currentOwner",
-						"type": "address"
-					}
-				],
-				"internalType": "struct MorySwapContract.Auction",
-				"name": "",
-				"type": "tuple"
-			}
-		],
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
 		"inputs": [],
-		"name": "getContractAddress",
+		"name": "getLogicAddress",
 		"outputs": [
 			{
 				"internalType": "address",
@@ -480,44 +244,12 @@ const ABI =
 	},
 	{
 		"inputs": [],
-		"name": "getDoneSells",
+		"name": "getMyBalance",
 		"outputs": [
 			{
-				"components": [
-					{
-						"internalType": "address",
-						"name": "from",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "timeStamp",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "wasAuction",
-						"type": "bool"
-					}
-				],
-				"internalType": "struct MorySwapContract.DoneSell[]",
+				"internalType": "uint256",
 				"name": "",
-				"type": "tuple[]"
+				"type": "uint256"
 			}
 		],
 		"stateMutability": "view",
@@ -525,43 +257,12 @@ const ABI =
 	},
 	{
 		"inputs": [],
-		"name": "getMyNFTs",
+		"name": "getSecretary",
 		"outputs": [
 			{
-				"internalType": "uint256[]",
+				"internalType": "address",
 				"name": "",
-				"type": "uint256[]"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "getSellById",
-		"outputs": [
-			{
-				"components": [
-					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "price",
-						"type": "uint256"
-					}
-				],
-				"internalType": "struct MorySwapContract.SellTicket",
-				"name": "",
-				"type": "tuple"
+				"type": "address"
 			}
 		],
 		"stateMutability": "view",
@@ -569,94 +270,15 @@ const ABI =
 	},
 	{
 		"inputs": [],
-		"name": "giveMeTestMRY",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "giveTime",
+		"name": "getSelfAddress",
 		"outputs": [
 			{
-				"internalType": "uint256",
+				"internalType": "address",
 				"name": "",
-				"type": "uint256"
+				"type": "address"
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "isFreezed",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "basePrice",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "daysH",
-				"type": "uint256"
-			}
-		],
-		"name": "listAuction",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "price",
-				"type": "uint256"
-			}
-		],
-		"name": "listNFTSell",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -673,83 +295,21 @@ const ABI =
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "nftName",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "address",
-				"name": "account",
+				"name": "adr",
 				"type": "address"
 			}
 		],
-		"name": "nftOwnedNumberOf",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
+		"name": "setLogicAddress",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
 		"inputs": [],
-		"name": "nftSymbol",
-		"outputs": [
-			{
-				"internalType": "string",
-				"name": "",
-				"type": "string"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "ownerOf",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			},
-			{
-				"internalType": "uint256",
-				"name": "bidPrice",
-				"type": "uint256"
-			}
-		],
-		"name": "placeBid",
+		"name": "setLogicsProxyAddress",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -757,12 +317,12 @@ const ABI =
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
+				"internalType": "address",
+				"name": "adr",
+				"type": "address"
 			}
 		],
-		"name": "redeemAuction",
+		"name": "setSecretary",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -797,12 +357,12 @@ const ABI =
 		"inputs": [
 			{
 				"internalType": "address",
-				"name": "recipient",
+				"name": "to",
 				"type": "address"
 			},
 			{
 				"internalType": "uint256",
-				"name": "amount",
+				"name": "value",
 				"type": "uint256"
 			}
 		],

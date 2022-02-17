@@ -57,67 +57,105 @@
 
                               <br>
                               <div class="ido-info d-flex justify-content-between"><span> Total releasing
-                                          token:</span><span> 7'000'000 "SWDR"</span></div>
+                                          token:</span><span><span id="totalReleasingToken"> ----- </span> "SWDR"</span></div>
                               <div class="ido-info d-flex justify-content-between"><span>Total
-                                          Contribution:</span><span> 243'850 "FRA"</span></div>
-                              <div class="ido-info d-flex justify-content-between"><span>Current Estimated token price ≈ </span><span> 0.07 "USD"</span></div>
-                              <div class="ido-info d-flex justify-content-between"><span>Contribution address
-                                          :</span><span>
-                                          "0x87B64804e..." <span onclick="copyToClipBoardCA()" class="copy"><span
-                                                      class="material-icons">
-                                                      content_copy
-                                                </span></span></span></div>
-                              <div class="ido-info d-flex justify-content-between"><span>Total pool weight:</span><span>
-                                          14'000'000</span></div>
+                                          Contribution:</span><span><span id="TotalContribution"> -----</span> "FRA"</span></span></div>
+                              <div class="ido-info d-flex justify-content-between"><span>Current Estimated token price ≈
+                                    </span><span> 0.07 "USD"</span></div>
+                              <div class="ido-info d-flex justify-content-between">
+
+                                    <span>Contribution address
+                                          :</span>
+
+                                    <span>
+                                          <span>
+
+                                                <span id="ContributionAddress">
+                                                      ----------
+                                                </span>
+
+                                                <span onclick="copyToClipBoardCA()" class="copy">
+                                                      <span class="material-icons">
+                                                            content_copy
+                                                      </span>
+                                                </span>
+
+                                          </span>
+
+
+
+                                    </span>
+                              </div>
+                              <!-- <div class="ido-info d-flex justify-content-between"><span>Total pool weight:</span>
+                                    <span>14'000'000</span> 
+                              </div>-->
                               <br>
 
 
 
                               <div id="line"></div>
-                              <br>
-                              <div class="ido-info d-flex justify-content-between"><span>My total
-                                          contribution:</span><span>
-                                          344 "FRA"</span></div>
-                              <br>
 
 
-                              <div class="ido-info d-flex justify-content-between">
-                                    <span> Deposit:</span>
-                                    <span>
-                                          <input type="number" class="deposit-inp">
-                                          <button class="deposit-btn"> Deposit</button></span>
+                              <div class="section disabled">
+                                    <br>
+                                    <div class="ido-info d-flex justify-content-between"><span>My total
+                                                contribution:</span>
+                                          <span id="MyTotalContribution"> 344 "FRA"</span>
+                                    </div>
+                                    <br>
+
+
+                                    <div class="ido-info d-flex justify-content-between">
+                                          <span> Deposit:</span>
+                                          <span>
+                                                <input type="number" class="deposit-inp">
+                                                <button class="deposit-btn"> Deposit</button></span>
+                                    </div>
+
+                                    <p class="note"> <span class="material-icons">
+                                                warning_amber
+                                          </span> NOTE: You can freely cancel all your deposit only within the first
+                                          hour
+                                          after
+                                          making the <b>first deposit.</b></p>
+
+
+
+                                    <br>
+                                    <div class="ido-info d-flex justify-content-between"><span>Time remained to cancel
+                                                :</span>
+                                          <span id="TimeRemainedToCancel"> --:--:-- </span>
+                                          <span>
+                                                <button class="withdraw-btn"> Withdraw All</button></span>
+                                    </div>
+
+
+                                    <br>
+                                    <div class="ido-info d-flex justify-content-between">
+                                          <span></span>
+
+                                    </div>
                               </div>
 
-                              <p class="note"> <span class="material-icons">
-                                          warning_amber
-                                    </span> NOTE: You can freely cancel all your deposit only within the first hour after
-                                    making the <b>first deposit.</b></p>
-
-
-
-                              <br>
-                              <div class="ido-info d-flex justify-content-between"><span>Time remained to cancel
-                                          :</span><span>
-                                          00:51:32</span>
-                                    <span>
-                                          <button class="withdraw-btn"> Withdraw All</button></span>
-                              </div>
-
-
-                              <br>
-                              <div class="ido-info d-flex justify-content-between">
-                                    <span></span>
-
-                              </div>
 
                               <div id="line"></div>
 
-                              <div class="ido-info d-flex justify-content-between"><span>IDO Start Time:</span><span>
-                                          2022/02/26  - 14:30:00</span></div>
-                              <div class="ido-info d-flex justify-content-between"><span>IDO End Time:</span><span>
-                                          2022/02/28 - 14:30:00</span></div>
-                              <div class="ido-info d-flex justify-content-between"><span>IDO Time left :</span><span>
-                                          04:24:58</span></div>
+                              <div class="ido-info d-flex justify-content-between"><span>IDO Start Time:</span>
+                                    <span id="idoStartTime">2022/02/26 - 14:30:00</span>
+                              </div>
+
+                              <div class="ido-info d-flex justify-content-between"><span>IDO End Time:</span>
+                                    <span id="idoEndTime">2022/02/28 - 14:30:00</span>
+                              </div>
+
+                              <div class="ido-info d-flex justify-content-between"><span>Time left to IDO Start:</span>
+                                    <span id="idoStartTimeLeft">--:--:--</span>
+                              </div>
+
+                              <div class="ido-info d-flex justify-content-between"><span>Time left to IDO End:</span>
+                                    <span id="idoTimeLeft">--:--:--</span>
+                              </div>
+                              <p> TO DO: <i>Timers blinking Shuld be fixed later.</i></p> 
                               <br>
                         </div>
                   </div>
@@ -181,10 +219,15 @@
       <script type="text/javascript" src="./assets/js/Intract/onCard.js"></script>
       <script type="text/javascript" src="./assets/js/Intract/toContract.js"></script>
       <script type="text/javascript" src="./assets/js/Intract/toPage.js"></script>
-      <script type="text/javascript" src="./assets/js/document/ido.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/ido.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/IDOLateral.js"></script>
       <script type="text/javascript" src="./assets/node_modules/ethers/dist/ethers.umd.min.js"></script>
 
 
+      <script type="text/javascript">
+
+            StartContractP();
+      </script>
 
 
 

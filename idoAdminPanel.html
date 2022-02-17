@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <meta charset="utf-8">
+      <title>Fiora DeFi Platform</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="css/ido/idoAdminPanel.css">
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+</head>
+
+<body>
+<!--       
+      <div class="head-pad">
+            <br>
+            <br>
+            <div class="navbar">
+
+                  <a class="navbar-title" href="/">FIORA</a>
+                  <a class="navbar-item" href="/dashboard">Dashboard</a>
+                  <a class="navbar-item" href="/community">Community</a>
+                  <div class="navbar-balance">Balance: 10250 FRA</div>
+
+            </div>
+      </div>
+
+      <div class="main-container">
+            <div class="text-center">
+                  <div class="s-title-head  ">IDO Admin Panel </div>
+            </div>
+ 
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="plans d-flex  justify-content-center       col-md-12 col-12 ">
+
+
+                  <div class="plan-pad col-8">
+
+                        <div class="plan ">
+                              <div class="plan-title">Current IDO data:</div>
+
+                              <br>
+                              <div class="ido-info d-flex justify-content-between">
+
+                                    <span> Total releasing token:</span>
+
+                                    <span>
+                                          <span id="totalReleasingToken"> ----- </span> &nbsp;"SWDR" &nbsp;
+
+                                          <span hidden="true" id="spinner">
+                                                <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                                                      <div class="ldio-ekqaxektp6t">
+                                                            <div></div>
+                                                      </div>
+                                                </div>
+                                          </span>
+
+
+
+                                          <span onclick="editTotalReleasingToken()" class="material-icons edit"
+                                                id="editTotal">
+                                                edit
+                                          </span>
+                                    </span>
+
+                              </div>
+                              <div class="ido-info d-flex justify-content-between"><span>Total
+                                          Contribution:</span><span><span id="TotalContribution"> -----</span>
+                                          "FRA"</span></span></div>
+                              <div class="ido-info d-flex justify-content-between"><span>Current Estimated token price ≈
+                                    </span><span> 0.07 "USD"</span></div>
+                              <div class="ido-info d-flex justify-content-between">
+
+                                    <span>Contribution address:</span> &nbsp;
+
+                                    <span>
+                                          <span>
+
+                                                <span id="ContributionAddress">
+                                                      ----------
+                                                </span>
+
+                                                <span onclick="copyToClipBoardCA()" class="copy">
+                                                      <span class="material-icons">
+                                                            content_copy
+                                                      </span>
+                                                </span>
+
+                                          </span>
+
+
+
+                                    </span>
+                              </div>
+                               
+                              <br>
+
+
+
+
+                              <div id="line"></div>
+
+                              <div class="ido-info d-flex justify-content-between">
+                                    <span>IDO Start Time:</span>
+                                    <span>
+                                          <span id="idoStartTime">----/--/-- &nbsp; --:--:-- </span> &nbsp;
+                                          <span onclick="editIDOStartTime()" class="material-icons edit"
+                                                id="editIDOStartTime">
+                                                edit
+                                          </span>
+                                          <span hidden="true" id="IDOStartTimeSpinner">
+                                                <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                                                      <div class="ldio-ekqaxektp6t">
+                                                            <div></div>
+                                                      </div>
+                                                </div>
+                                          </span>
+                                    </span>
+                              </div>
+
+                              <div class="ido-info d-flex justify-content-between"><span>IDO End
+                                          Time:</span>
+                                    <span id="idoEndTime">----/--/-- &nbsp; --:--:--</span>
+                              </div>
+
+                              <div class="ido-info d-flex justify-content-between"><span>Time left to IDO
+                                          Start:</span>
+                                    <span id="idoStartTimeLeft">--:--:--</span>
+                              </div>
+
+                              <div class="ido-info d-flex justify-content-between"><span>Time left to IDO
+                                          End:</span>
+                                    <span id="idoTimeLeft">--:--:--</span>
+                              </div>
+                              <p> TO DO: <i>Timers blinking Shuld be fixed later.</i></p>
+                              <br>
+                        </div>
+                  </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="  justify-content-center col-12">
+                  <div class="text-description col-8">
+                        <h3>Where the idea meets reality.</h3>
+                        <p>The FIORA platform's mission is to provide an infrastructure for new raising web3
+                              projects and empower them till fulfilling victory.</p>
+
+                        <p>The infinite web3 endless universe has a lot of unseen areas which still haven't
+                              been
+                              discovered and has lots of unfulfilled opportunities. we should redefine the
+                              meaning
+                              of success which should assign it to an entity that searches, finds, builds,
+                              and
+                              benefits these opportunities.
+                        </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="text-description col-8">
+                        <h3>Join the community to stay tunned to plans changes.</h3>
+
+                  </div>
+                  <br>
+
+            </div>
+
+            <br>
+            <br>
+
+
+
+      </div> -->
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <script type="text/javascript" src="./assets/js/Intract/consts.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOAminPanelPAgeSetFunctions.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/onCard.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/toContract.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/toPage.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/IDOLateral.js"></script>
+      <script type="text/javascript" src="./assets/node_modules/ethers/dist/ethers.umd.min.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOAminPanel.js"></script> -->
+
+
+      <script type="text/javascript" src="./assets/js/Intract/consts.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/toContract.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOAminPanelPAgeSetFunctions.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOEditData.js"></script>
+      <script type="text/javascript" src="./assets/node_modules/ethers/dist/ethers.umd.min.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOAminPanel.js"></script>
+
+
+</body>
+
+</html>
