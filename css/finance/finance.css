@@ -1,0 +1,62 @@
+body{
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+      /* margin: 0px; */
+      overflow-x: hidden;
+      /* box-sizing: content-box; */
+      background-image: url("../../assets/images/finance/pbg.png");
+      /* background: linear-gradient(120deg, #1b1580, rgba(108, 31, 115, 1), rgb(167, 7, 42)); */
+}
+    
+#main{
+      height: 100vh;
+      overflow: auto;
+      overflow-x: hidden;
+}
+
+.navbar-balance{
+      color: white;  
+      margin-right: 5%;
+}
+
+.navbar-item{
+      margin-right: 5%;
+      text-decoration: underline;
+      color: white ;  
+      
+
+}
+
+
+
+.navbar {
+      overflow: hidden;
+      background: linear-gradient(90deg, rgb(47, 133, 198 ,0.7),#ff6b9fb0);
+      /* background: linear-gradient(90deg, rgba(137, 19, 77, 0.8),rgb(128, 22, 156,0.8)); */
+}
+
+.navbar-title{
+      margin-left: 5%;
+      font-size: 2vw;
+      font-weight: bold;
+      color: white ;  
+      text-decoration: none;
+
+}
+
+.main-container{
+      height: 82vh;
+      overflow: auto;
+      overflow-x: hidden;
+}
+.head-pad{
+      height: 18vh;
+
+}
+
+
+#balanceSpinner{
+      max-height: 0.2rem;
+      position: sticky;
+}

@@ -1,4 +1,4 @@
-const contractAddress = "0x73Af083b4D896E073f68887170dd74200B7e6535";
+const contractAddress = "0xAAee07792F78E9d0334C80101C40B89255Ccd763";
 
 //#region CLASSes
 
@@ -129,19 +129,6 @@ const ABI =
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "Init",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -187,6 +174,24 @@ const ABI =
 	{
 		"inputs": [
 			{
+				"internalType": "address[]",
+				"name": "to",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "value",
+				"type": "uint256[]"
+			}
+		],
+		"name": "batchTransfer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
 				"internalType": "uint256",
 				"name": "command",
 				"type": "uint256"
@@ -214,6 +219,13 @@ const ABI =
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "faucet",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -374,6 +386,24 @@ const ABI =
 				"type": "bool"
 			}
 		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "transferFast",
+		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	}

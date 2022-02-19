@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <meta charset="utf-8">
+      <title>Fiora DeFi Platform</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+      <link rel="stylesheet" href="css/finance/finance.css">
+      <link rel="stylesheet" href="css/finance/style2.css">
+      <link rel="stylesheet" href="css/commonStyles.css">
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+</head>
+
+<body>
+      <div class="head-pad">
+            <br>
+            <br>
+            <div class="navbar">
+
+                  <a class="navbar-title" href="/">FIORA</a>
+
+                  <div class="navbar-balance">Balance: <span id="balanceAmount" hidden="true">0 "FRA"</span>
+                        <span id="balanceSpinner">
+                              <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                                    <div class="ldio-ekqaxektp6t">
+                                          <div></div>
+                                    </div>
+                              </div>
+                        </span>
+
+
+                  </div>
+
+            </div>
+      </div>
+
+
+      <!--#region TRANSFER  -->
+
+      <!-- //=============    TRANSFER   ============= -->
+      <div class="function-div row justify-content-between" id="testRow">
+            <div class="function-text   col-4">
+                  <h2>Transfer </h2>
+                  <p> Easy peasy. you can transfer "FRA" here. just enter the destination address and
+                        amount.</p>
+
+                  <div class="warning-box">
+                        <p><b>WARNING: </b>All of mory swap transactions ar irreversible so be
+                              carefull
+                              about addresses and
+                              actions and...</p>
+                  </div>
+            </div>
+
+
+            <div class=" function-action col-5">
+                  <label for="transfer-destination">Transfer destination address:</label>
+                  <br>
+                  <input type="text" class="function-action-input" name="transfer-destination" id="transfer-destination"
+                        placeholder="0x87B648.....">
+                  <label for="transfer-destination">Transfer amount:</label>
+                  <br>
+                  <input type="number" class="function-action-input" name="transfer-amount" id="transfer-amount"
+                        placeholder="1000" style="width: 70%;">
+
+                  <button onclick="transfer()" id="transferBTN" class="btn-transfer"> Send</button>
+            </div>
+      </div>
+      <!--#endregion scripts  -->
+
+
+
+
+
+      <!--#region scripts  -->
+
+      <script type="text/javascript" src="./assets/node_modules/ethers/dist/ethers.umd.min.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/consts.js"></script>
+      <script type="text/javascript" src="./assets/js/init.js"></script>
+      <script type="text/javascript" src="./assets/js/common.js"></script>
+      <script type="text/javascript" src="./assets/js/document/Finance/financePage.js"></script>
+
+
+      <!--#endregion scripts  -->
+
+</body>

@@ -1,0 +1,58 @@
+ 
+
+
+
+
+ 
+/*#region spinner*/
+
+/*    ELEMENT:
+
+      <span hidden="true" id="spinner">
+            <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                  <div class="ldio-ekqaxektp6t">
+                        <div></div>
+                  </div>
+            </div>
+      </span>
+
+*/
+
+
+@keyframes ldio-ekqaxektp6t {
+      0% { transform: translate(-50%,-50%) rotate(0deg); }
+      100% { transform: translate(-50%,-50%) rotate(360deg); }
+    }
+    .ldio-ekqaxektp6t div {
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      border: 16px solid #ffffff;
+      border-top-color: transparent;
+      border-radius: 50%;
+    }
+    .ldio-ekqaxektp6t div {
+      animation: ldio-ekqaxektp6t 1s linear infinite;
+      top: 50px;
+      left: 50px
+    }
+    .loadingio-spinner-rolling-eu9l4inypyk {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0);
+    }
+    .ldio-ekqaxektp6t {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateZ(0) scale(0.24);
+      backface-visibility: hidden;
+      transform-origin: 0 0; /* see note above */
+    }
+    .ldio-ekqaxektp6t div { box-sizing: content-box; }
+    
+    
+
+/*#endregion*/
