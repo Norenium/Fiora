@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<!--       
+
       <div class="head-pad">
             <br>
             <br>
@@ -27,7 +27,16 @@
                   <a class="navbar-title" href="/">FIORA</a>
                   <a class="navbar-item" href="/dashboard">Dashboard</a>
                   <a class="navbar-item" href="/community">Community</a>
-                  <div class="navbar-balance">Balance: 10250 FRA</div>
+                                    
+                  <div class="navbar-balance">Balance: <span id="balanceAmount" hidden="true">0 "FRA"</span>
+                        <span id="balanceSpinner">
+                              <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                                    <div class="ldio-ekqaxektp6t">
+                                          <div></div>
+                                    </div>
+                              </div>
+                        </span>
+                  </div>
 
             </div>
       </div>
@@ -36,7 +45,7 @@
             <div class="text-center">
                   <div class="s-title-head  ">IDO Admin Panel </div>
             </div>
- 
+
 
 
 
@@ -50,6 +59,18 @@
                   <div class="plan-pad col-8">
 
                         <div class="plan ">
+                              <div class="plan-title">Current IDO data:</div>
+                              <div>
+                              <br>
+                              Proxy contract address: "<span id="proxyContractAddress"></span>"
+                              <br>
+
+
+                              <br>
+
+                              <br>
+                        </div>
+
                               <div class="plan-title">Current IDO data:</div>
 
                               <br>
@@ -105,7 +126,7 @@
 
                                     </span>
                               </div>
-                               
+
                               <br>
 
 
@@ -131,11 +152,25 @@
                                     </span>
                               </div>
 
-                              <div class="ido-info d-flex justify-content-between"><span>IDO End
-                                          Time:</span>
-                                    <span id="idoEndTime">----/--/-- &nbsp; --:--:--</span>
+                              <div class="ido-info d-flex justify-content-between">
+                                    <span>IDO End Time:</span>
+                                    <span>
+                                          <span id="idoEndTime">----/--/-- &nbsp; --:--:-- </span> &nbsp;
+                                          <span onclick="editIDOEndTime()" class="material-icons edit"
+                                                id="editIDOEndTime">
+                                                edit
+                                          </span>
+                                          <span hidden="true" id="IDOEndTimeSpinner">
+                                                <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                                                      <div class="ldio-ekqaxektp6t">
+                                                            <div></div>
+                                                      </div>
+                                                </div>
+                                          </span>
+                                    </span>
                               </div>
 
+                              
                               <div class="ido-info d-flex justify-content-between"><span>Time left to IDO
                                           Start:</span>
                                     <span id="idoStartTimeLeft">--:--:--</span>
@@ -191,11 +226,11 @@
             </div>
 
             <br>
-            <br>
+            <br id="userDepositPanel">
 
 
 
-      </div> -->
+      </div>
 
 
 
@@ -216,13 +251,14 @@
       <script type="text/javascript" src="./assets/node_modules/ethers/dist/ethers.umd.min.js"></script>
       <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOAminPanel.js"></script> -->
 
-
-      <script type="text/javascript" src="./assets/js/Intract/consts.js"></script>
-      <script type="text/javascript" src="./assets/js/Intract/toContract.js"></script>
-      <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOAminPanelPAgeSetFunctions.js"></script>
-      <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOEditData.js"></script>
       <script type="text/javascript" src="./assets/node_modules/ethers/dist/ethers.umd.min.js"></script>
-      <script type="text/javascript" src="./assets/js/document/IDOAminPanel/IDOAminPanel.js"></script>
+      <script type="text/javascript" src="./assets/js/Intract/consts.js"></script>
+      <script type="text/javascript" src="./assets/js/init.js"></script>
+      <script type="text/javascript" src="./assets/js/common.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/IDOFetch.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/IDOSet.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/idoAdminPanelPage.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/IDOEditData.js"></script>
 
 
 </body>

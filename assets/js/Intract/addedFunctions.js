@@ -50,8 +50,6 @@ var distanceEnd;
 
 function setIDOCoutSownT(startTime, endTime, startId, endId) {
 
-
-
       var countDownDateStart = startTime;
       var countDownDateEnd = endTime;
 

@@ -10,6 +10,7 @@
       <link rel="icon" type="image/x-icon" href="favicon.ico">
       <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
       <link rel="stylesheet" href="css/ido/ido.css">
+      <link rel="stylesheet" href="css/commonStyles.css">
 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,8 +27,16 @@
                   <a class="navbar-title" href="/">FIORA</a>
                   <a class="navbar-item" href="/dashboard">Dashboard</a>
                   <a class="navbar-item" href="/community">Community</a>
-                  <div class="navbar-balance">Balance: <span id="balanceAmount">0</span> FRA</div>
-
+                  
+                  <div class="navbar-balance">Balance: <span id="balanceAmount" hidden="true">0 "FRA"</span>
+                        <span id="balanceSpinner">
+                              <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                                    <div class="ldio-ekqaxektp6t">
+                                          <div></div>
+                                    </div>
+                              </div>
+                        </span>
+                  </div>
             </div>
       </div>
 
@@ -51,15 +60,17 @@
             <br>
             <div class="plans d-flex  justify-content-center       col-md-12 col-12 ">
 
-                  <div class="plan-pad col-6">
+                  <div class="plan-pad col-8">
 
                         <div class="plan ">
 
                               <br>
                               <div class="ido-info d-flex justify-content-between"><span> Total releasing
-                                          token:</span><span><span id="totalReleasingToken"> ----- </span> "SWDR"</span></div>
+                                          token:</span><span><span id="totalReleasingToken"> ----- </span> "SWDR"</span>
+                              </div>
                               <div class="ido-info d-flex justify-content-between"><span>Total
-                                          Contribution:</span><span><span id="TotalContribution"> -----</span> "FRA"</span></span></div>
+                                          Contribution:</span><span><span id="TotalContribution"> -----</span>
+                                          "FRA"</span></span></div>
                               <div class="ido-info d-flex justify-content-between"><span>Current Estimated token price ≈
                                     </span><span> 0.07 "USD"</span></div>
                               <div class="ido-info d-flex justify-content-between">
@@ -96,11 +107,20 @@
                               <div id="line"></div>
 
 
-                              <div class="section disabled">
+                              <div class="section disabled" id="userDepositPanel">
                                     <br>
                                     <div class="ido-info d-flex justify-content-between"><span>My total
                                                 contribution:</span>
-                                          <span id="MyTotalContribution"> 344 "FRA"</span>
+                                                <span>
+                                          <span id="MyTotalContribution"  hidden="true"> --- </span>
+                                          <span id="MyTotalContributionSpinner">
+                                                <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                                                      <div class="ldio-ekqaxektp6t">
+                                                            <div></div>
+                                                      </div>
+                                                </div>
+                                          </span>
+                                          "FRA"</span>
                                     </div>
                                     <br>
 
@@ -108,8 +128,8 @@
                                     <div class="ido-info d-flex justify-content-between">
                                           <span> Deposit:</span>
                                           <span>
-                                                <input type="number" class="deposit-inp">
-                                                <button class="deposit-btn"> Deposit</button></span>
+                                                <input type="number" class="deposit-inp" id="depositInput">
+                                                <button class="deposit-btn" onclick="Deposit()"> Deposit</button></span>
                                     </div>
 
                                     <p class="note"> <span class="material-icons">
@@ -124,9 +144,16 @@
                                     <br>
                                     <div class="ido-info d-flex justify-content-between"><span>Time remained to cancel
                                                 :</span>
-                                          <span id="TimeRemainedToCancel"> --:--:-- </span>
+                                          <span id="TimeRemainedToCancel" hidden="true"> --:--:-- </span>
+                                          <span id="TimeRemainedToCancelSpinner"  >
+                                                <div class="loadingio-spinner-rolling-eu9l4inypyk">
+                                                      <div class="ldio-ekqaxektp6t">
+                                                            <div></div>
+                                                      </div>
+                                                </div>
+                                          </span>
                                           <span>
-                                                <button class="withdraw-btn"> Withdraw All</button></span>
+                                                <button class="withdraw-btn disabled" id="withdrawBtn" > Cancel All Deposits</button></span>
                                     </div>
 
 
@@ -148,14 +175,14 @@
                                     <span id="idoEndTime">2022/02/28 - 14:30:00</span>
                               </div>
 
-                              <div class="ido-info d-flex justify-content-between"><span>Time left to IDO Start:</span>
+                              <div class="ido-info d-flex justify-content-between" id="start-div"><span>Time left to IDO Start:</span>
                                     <span id="idoStartTimeLeft">--:--:--</span>
                               </div>
 
-                              <div class="ido-info d-flex justify-content-between"><span>Time left to IDO End:</span>
+                              <div class="ido-info d-flex justify-content-between"  id="end-div"><span>Time left to IDO End:</span>
                                     <span id="idoTimeLeft">--:--:--</span>
                               </div>
-                              <p> TO DO: <i>Timers blinking Shuld be fixed later.</i></p> 
+                              <p> TO DO: <i>Timers blinking Shuld be fixed later.</i></p>
                               <br>
                         </div>
                   </div>
@@ -215,19 +242,16 @@
 
 
       <script type="text/javascript" src="./assets/js/Intract/consts.js"></script>
-      <script type="text/javascript" src="./assets/js/Intract/addedFunctions.js"></script>
-      <script type="text/javascript" src="./assets/js/Intract/onCard.js"></script>
-      <script type="text/javascript" src="./assets/js/Intract/toContract.js"></script>
-      <script type="text/javascript" src="./assets/js/Intract/toPage.js"></script>
-      <script type="text/javascript" src="./assets/js/document/IDO/ido.js"></script>
-      <script type="text/javascript" src="./assets/js/document/IDO/IDOLateral.js"></script>
       <script type="text/javascript" src="./assets/node_modules/ethers/dist/ethers.umd.min.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/IDOFetch.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/IDOSet.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/idoTimers.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/idoDeposit.js"></script>
+      <script type="text/javascript" src="./assets/js/init.js"></script>
+      <script type="text/javascript" src="./assets/js/common.js"></script>
+      <script type="text/javascript" src="./assets/js/document/IDO/idoPage.js"></script>
 
-
-      <script type="text/javascript">
-
-            StartContractP();
-      </script>
+ 
 
 
 

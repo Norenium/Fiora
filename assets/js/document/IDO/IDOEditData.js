@@ -58,7 +58,7 @@ function resetTotalReleasingToken(selection) {
 }
 
 
-/// SET START END TIME
+/// SET START TIME
 function editIDOStartTime() {
 
       var inp = window.prompt("Set new number of seconds to Start point:", "Type a number!")
@@ -97,7 +97,7 @@ function resetIDOStartTime(inputValue) {
       document.getElementById('editIDOStartTime').hidden = true;
       document.getElementById('IDOStartTimeSpinner').hidden = false;
 
-      //Set max supply for IDO
+      //Set Start point for IDO
       myContract.alphaCall(25, [inputValue]).then(res => {
             console.log(' ido start res: ' + res);
             setTimeout(() => {
@@ -126,6 +126,85 @@ function resetIDOStartTime(inputValue) {
             document.getElementById('idoStartTime').classList.remove('disabled');
             document.getElementById('IDOStartTimeSpinner').hidden = true;
             document.getElementById('editIDOStartTime').hidden = false;
+            setTimeout(() => {
+                  window.alert('Task rejected');
+            }, 100)
+
+      });
+
+
+}
+
+
+
+/// SET END TIME
+function editIDOEndTime() {
+
+      var inp = window.prompt("Set new number of seconds to End point:", "Type a number!")
+
+      if (inp == null) {
+            return; //break out of the function early
+      } else {
+            var inputValue = parseInt(inp);
+            if (!/^\d+$/.test(inputValue)) {
+                  window.alert('ONLY NUMBERS ARE ALLOWED!!!    No change executed');
+                  return;
+            } else {
+
+                  if (inputValue < 60) {
+                        window.alert('ITS TOO CLOSE!!!    No change executed');
+                        return;
+                  } else {
+
+                        myContract.name().then(x => {
+                              console.log(x);
+                              resetIDOEndTime(inputValue)
+                              console.log('send request to change IDO End point ' + inputValue);
+                        });
+                        console.log('send request for contract name');
+                  }
+            }
+      }
+
+}
+
+function resetIDOEndTime(inputValue) {
+      console.log('resetIDOEndTime RQUEST: ' + inputValue);
+
+      var CRT = idoEndTime;
+      document.getElementById('idoEndTime').classList.add('disabled');
+      document.getElementById('editIDOEndTime').hidden = true;
+      document.getElementById('IDOEndTimeSpinner').hidden = false;
+
+      //Set End Point for IDO
+      myContract.alphaCall(26, [inputValue]).then(res => {
+            console.log(' ido End res: ' + res);
+            setTimeout(() => {
+                  var xIntrv = setInterval(() => {
+
+                        myContract.bravoCall(15).then(x => {
+                              CRT = parseInt(x);
+                              console.log('fetched CRT: ' + CRT);
+                        });
+
+                        if (CRT != idoEndTime) {
+                              document.getElementById('idoEndTime').classList.remove('disabled');
+                              document.getElementById('IDOEndTimeSpinner').hidden = true;
+                              document.getElementById('editIDOEndTime').hidden = false;
+                              console.log('>>>  NEW  CRT: ' + CRT);
+                              idoEndTime = CRT;
+                              setIdoEndDate2(CRT);
+                              clearInterval(xIntrv);
+                        }
+                  }, 4000)
+            }, 6000)
+
+      }).catch(() => {
+
+            console.log('Task rejected');
+            document.getElementById('idoEndTime').classList.remove('disabled');
+            document.getElementById('IDOEndTimeSpinner').hidden = true;
+            document.getElementById('editIDOEndTime').hidden = false;
             setTimeout(() => {
                   window.alert('Task rejected');
             }, 100)
