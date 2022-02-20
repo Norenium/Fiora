@@ -1,4 +1,4 @@
-const contractAddress = "0xAAee07792F78E9d0334C80101C40B89255Ccd763";
+const contractAddress = "0x9D942d6600c476a89CcC128E986009e9d102c07c";
 
 //#region CLASSes
 
