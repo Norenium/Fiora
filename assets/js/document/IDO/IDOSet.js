@@ -30,7 +30,7 @@ function setIdoEndDate2(time) {
 
 /// CONTRIBUTION ADDRESS
 function setIdoDataAddress() {
-      var ca = '"' + ContributionAddress.substring(1, 10) + '..."';
+      var ca = '"' + ContributionAddress.substring(0, 10) + '..."';
       document.getElementById('ContributionAddress').innerHTML = ca;
 }
 
